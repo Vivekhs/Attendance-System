@@ -1,0 +1,38 @@
+
+
+	<md-content>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+            <h2>Attendance System</h2>
+            <span flex></span>
+
+
+            </div>
+        </md-toolbar>
+    </md-content>
+    <div class="menu-demo-container" layout-align="center center" layout="column">
+    <h2 class="md-title">Simple dropdown menu</h2>
+    <p>Applying the <code>md-menu-origin</code> and <code>md-menu-align-target</code> attributes ensure that the menu elements align.
+    Note: If you select the Redial menu option, then a modal dialog will zoom out of the phone icon button.</p>
+    <md-menu>
+      <md-button aria-label="Open phone interactions menu" class="md-icon-button" ng-click="ctrl.openMenu($mdOpenMenu, $event)">
+        <md-icon md-menu-origin md-svg-icon="/images/user.svg"></md-icon>
+      </md-button>
+      <md-menu-content width="4">
+        <md-menu-item>
+          <md-button ng-click="ctrl.redial($event)">
+            <md-icon md-svg-icon="/images/user.svg" md-menu-align-target></md-icon>
+            Redial
+          </md-button>
+        </md-menu-item>
+        <md-menu-item>
+          <md-button disabled="disabled" ng-click="ctrl.checkVoicemail()">
+            <md-icon md-svg-icon="/images/user.svg"></md-icon>
+            Check voicemail
+          </md-button>
+        </md-menu-item>
+        <md-menu-divider></md-menu-divider>
+
+      </md-menu-content>
+    </md-menu>
+  </div>
